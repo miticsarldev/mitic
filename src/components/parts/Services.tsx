@@ -91,7 +91,9 @@ export default function DynamicServicesSection() {
     index: number;
   }) => (
     <div
-      ref={(el) => (serviceRefs.current[index] = el)}
+      ref={(el) => {
+        serviceRefs.current[index] = el;
+      }}
       className="w-full space-y-6 transition-opacity duration-500"
     >
       <h2 className="text-[calc(min(8vh,4em))] font-bold text-mitic-4 mb-[30px]">
