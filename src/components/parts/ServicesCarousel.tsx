@@ -266,11 +266,6 @@ const ServicesCarousel = () => {
   return (
     <div className="bg-white mt-[100px] mb-[80px]">
       <HorizontalScrollCarousel />
-      <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold uppercase text-neutral-500">
-          Scroll up
-        </span>
-      </div>
     </div>
   );
 };
